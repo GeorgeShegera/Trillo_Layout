@@ -12,8 +12,10 @@
 @import "layout/header";
 @import "layout/content";
 @import "layout/layout";
+@import "layout/side-navigation";
 
 // components
+@import "components/legal-text";
 @import "components/logo";
 @import "components/search";
 @import "components/user-nav";
