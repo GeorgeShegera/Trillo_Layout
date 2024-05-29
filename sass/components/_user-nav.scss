@@ -64,6 +64,7 @@
     position: absolute;
     top: 100%;
     left: 50%;
+    z-index: 2;
     transform: translateX(-50%);
     white-space: nowrap;
     transition: all 0.3s ease-out;
@@ -84,12 +85,18 @@
   }
 
   &__mes-last {
-    padding: 0.5rem 1rem;
-    display: flex;
-    gap: 1rem;
-    transition: color 0.3s ease;
+    &:link,
+    &:visited {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: flex;
+      gap: 1rem;
+      transition: color 0.3s ease;
+      color: #fff;
+    }
 
-    &:hover {
+    &:hover,
+    &:active {
       color: var(--color-primary);
     }
 

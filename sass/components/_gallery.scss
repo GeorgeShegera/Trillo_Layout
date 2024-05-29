@@ -1,8 +1,38 @@
 .gallery {
   display: flex;
 
+  &__item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__item:hover &__photo {
+    filter: blur(3px) brightness(80%);
+    transform: scale(1.2);
+  }
+  &__item:hover &__title {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
   &__photo {
     width: 100%;
     display: block;
+    transition: all 0.5s ease;
+  }
+
+  &__title {
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    opacity: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+
+    width: 100%;
+    text-align: center;
   }
 }
