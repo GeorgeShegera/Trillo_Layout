@@ -5,6 +5,11 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(small-phone) {
+    order: 1;
+    flex: 0 0 100%;
+  }
+
   &__input-wrapper {
     display: flex;
     width: 90%;

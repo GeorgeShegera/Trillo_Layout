@@ -13,6 +13,11 @@
   position: relative;
   overflow: hidden;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
   &::before {
     content: "\201C";
     position: absolute;

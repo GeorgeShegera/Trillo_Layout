@@ -1,0 +1,24 @@
+// Media Query manager
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: $bp-largest) {
+      @content;
+    }
+  } @else if $breakpoint == tab-land-small {
+    @media only screen and (max-width: $bg-large) {
+      @content;
+    }
+  } @else if $breakpoint == tab-port {
+    @media only screen and (max-width: $bg-medium) {
+      @content;
+    }
+  } @else if $breakpoint == phone {
+    @media only screen and (max-width: $bg-small) {
+      @content;
+    }
+  } @else if $breakpoint == small-phone {
+    @media only screen and (max-width: $bg-smallest) {
+      @content;
+    }
+  }
+}

@@ -7,4 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include respond(small-phone) {
+    height: 12rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 }
