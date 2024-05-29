@@ -40,21 +40,74 @@
             <span class="user-nav__notification">7</span>
           </div>
 
-          <div class="user-nav__icon-box">
+          <input
+            id="open-notifications"
+            type="checkbox"
+            class="user-nav__open-notific"
+          />
+          <label for="open-notifications" class="user-nav__notification-box">
             <svg class="user-nav__icon">
               <use xlink:href="img/sprite.svg#icon-chat"></use>
             </svg>
             <span class="user-nav__notification">13</span>
-          </div>
 
-          <div class="user-nav__user">
+            <div class="user-nav__notific-menu">
+              <div class="user-nav__mes-counter">
+                <span class="user-nav__new-sign">&nbsp;</span> You have 13
+                message
+              </div>
+              <div class="user-nav__mes-last">Lucy and 12 others</div>
+            </div>
+          </label>
+
+          <input
+            id="open-user-menu"
+            type="checkbox"
+            class="user-nav__open-user-menu"
+          />
+          <label for="open-user-menu" class="user-nav__user">
             <img
               src="img/user.jpg"
               alt="User photo"
               class="user-nav__user-photo"
             />
             <span class="user-nav__user-name">Jonas</span>
-          </div>
+
+            <ul class="user-nav__menu">
+              <li class="user-nav__menu-item">
+                <a href="#" class="user-nav__menu-link">
+                  <svg class="user-nav__menu-icon">
+                    <use xlink:href="img/sprite.svg#icon-cog"></use>
+                  </svg>
+                  <span>Account Settings</span></a
+                >
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="#" class="user-nav__menu-link">
+                  <svg class="user-nav__menu-icon">
+                    <use xlink:href="img/sprite.svg#icon-book"></use>
+                  </svg>
+                  <span>My History</span></a
+                >
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="#" class="user-nav__menu-link">
+                  <svg class="user-nav__menu-icon">
+                    <use xlink:href="img/sprite.svg#icon-bug"></use>
+                  </svg>
+                  <span>Report a Bug</span>
+                </a>
+              </li>
+              <li class="user-nav__menu-item">
+                <a href="#" class="user-nav__menu-link">
+                  <svg class="user-nav__menu-icon">
+                    <use xlink:href="img/sprite.svg#icon-switch"></use>
+                  </svg>
+                  <span>Logout</span></a
+                >
+              </li>
+            </ul>
+          </label>
         </nav>
       </header>
       <div class="content">

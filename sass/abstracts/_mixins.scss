@@ -22,3 +22,31 @@
     }
   }
 }
+
+// Animations
+@mixin hover-animation($duration1: 0.2s, $duration2: 0.4s) {
+  &::before {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-primary);
+    transform: scaleY(0);
+    transition: transform $duration1,
+      width $duration2 cubic-bezier(1, 0, 0, 1) $duration1,
+      background-color 0.1s;
+  }
+
+  &:hover::before,
+  &_active::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  &:active::before {
+    background-color: var(--color-primary-light);
+  }
+}

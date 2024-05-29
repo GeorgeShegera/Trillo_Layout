@@ -1,9 +1,9 @@
 .cta {
-  padding: 3.5rem 0;
+  padding: 3.5rem 1rem;
   text-align: center;
 
   @include respond(tab-port) {
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
   }
 
   &__book-now {
@@ -11,5 +11,9 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
+
+    @include respond(small-phone) {
+      font-size: 1.8rem;
+    }
   }
 }
